@@ -1,0 +1,16 @@
+# Server Configuration
+PORT=3000
+
+# Supabase Configuration
+SUPABASE_URL=https://your-project-id.supabase.co
+SUPABASE_ANON_KEY=your-supabase-anon-key
+
+# Helius Webhook Authentication
+# This should match the authentication header you configure in Helius
+WEBHOOK_AUTH_HEADER=your-secret-auth-header
+
+# CORS Configuration
+CORS_ORIGIN=*
+
+# Logging
+LOG_LEVEL=info

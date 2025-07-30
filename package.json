@@ -1,0 +1,38 @@
+{
+    "name": "indexer-backend",
+    "version": "1.0.0",
+    "description": "Solana event indexer backend using Helius webhooks",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+        "test": "jest",
+        "start:counter": "node dist/index.js",
+        "dev:counter": "ts-node app/src/index.ts",
+        "initialize:counter": "ts-node app/src/scripts/initialize.ts",
+        "increment:counter": "ts-node app/src/scripts/increment.ts",
+        "decrement:counter": "ts-node app/src/scripts/decrement.ts",
+        "demo:counter": "ts-node app/src/scripts/demo.ts",
+        "monitor:counter": "ts-node app/src/scripts/monitor.ts"
+    },
+    "dependencies": {
+        "@coral-xyz/anchor": "^0.29.0",
+        "@solana/web3.js": "^1.87.6",
+        "@supabase/supabase-js": "^2.53.0",
+        "bs58": "^5.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "winston": "^3.11.0"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/jest": "^29.5.11",
+        "@types/node": "^20.10.5",
+        "jest": "^29.7.0",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.3.3"
+    }
+}
